@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::Base
+class TodosController < ApplicationController
     def index
         todos = Todo.order("created_at DESC")
         render json: todos
